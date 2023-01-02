@@ -1,0 +1,24 @@
+#headerBox{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    text-align: center;
+}
+
+#addEvent{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80%;
+    margin-bottom: 1%;
+}
+
+#titleheader{
+font-size: 45px;
+}
+
+ol {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding: 0;
+}
