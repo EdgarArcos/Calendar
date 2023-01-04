@@ -1,36 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Calendar" content="width=device-width, initial-scale=1.0">
-    <script src="./app.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Calendar</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Calendario Interactivo</title>
 </head>
 <body>
-    <header id="headerBox">
-        <h1 id="titleheader">Calendar</h1>
-        <button id="addEvent">Add Event</button>
-    </header>
-    <div>
-        <h1>Enero 2021</h1>
-        <ol>
-        <li class="day-name">Lun</li>
-        <li class="day-name">Mar</li>
-        <li class="day-name">Mié</li>
-        <li class="day-name">Jue</li>
-        <li class="day-name">Vie</li>
-        <li class="day-name">Sáb</li>
-        <li class="day-name">Dom</li>
-        <li class="first-day">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        </ol>
+
+<h1 class="title">Calendario Interactivo</h1>
+
+<div class="calendar">
+    <div class="calendar__info">
+        <div class="calendar__prev" id="prev-month">&#9664;</div>
+        <div class="calendar__month" id="month"></div>
+        <div class="calendar__year" id="year"></div>
+        <div class="calendar__next" id="next-month">&#9654;</div>
     </div>
+
+    <div class="calendar__week">
+        <div class="calendar__day calendar__item">Mon</div>
+        <div class="calendar__day calendar__item">Tue</div>
+        <div class="calendar__day calendar__item">Wed</div>
+        <div class="calendar__day calendar__item">Thu</div>
+        <div class="calendar__day calendar__item">Fri</div>
+        <div class="calendar__day calendar__item">Sat</div>
+        <div class="calendar__day calendar__item">Sun</div>
+    </div>
+
+    <div class="calendar__dates" id="dates"></div>
+</div>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>
