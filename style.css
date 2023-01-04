@@ -1,24 +1,54 @@
-#headerBox{
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+body {
+    background-color: beige;
+}
+
+.title{
     text-align: center;
+    color: black;
 }
 
-#addEvent{
+.calendar{
+    background-color: moccasin;
+    width: 80%;
+    margin: 1rem auto;
+    padding: .5em 0;
+}
+
+.calendar_info{
     display: flex;
-    justify-content: flex-end;
-    margin-left: 80%;
-    margin-bottom: 1%;
+    align-items: center;
+    padding: 0 2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
 
-#titleheader{
-font-size: 45px;
+.calendar_prev, .calendar_next {
+    cursor: pointer;
+    font-size: 1.2em;
 }
 
-ol {
+.calendar_prev:hover, .calendar_next:hover {
+    color: yellow
+}
+
+.calendar_prev{
+    margin-right: auto;
+}
+
+.calendar_next{
+    margin-left: auto;
+}
+
+.calendar_week {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    list-style: none;
-    padding: 0;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.calendar_item{
+    text-align: center;
+    line-height: 3;
+}
+
+.calendar_month, .calendar_year{
+    padding: .5em .5em;
 }
